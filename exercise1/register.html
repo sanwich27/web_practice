@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+	<!-- comment (ctrl+/) -->
+	<a href="index.html">
+		<h2>Go back</h2>
+	</a><br>
+	<form>
+		First Name: <input type="text" name="firstname"><br>
+		Last Name: <input type="text" name="lastname"><br>
+		Passwowrd: <input type="password" name="password" min="10"><br>
+		Email: <input type="email" name="email" required><br>
+		Birthday: <input type="date" name="birthday"><br>
+		Gender:<br>
+		<input type="radio" name="gender" value="male">Male<br>
+		<input type="radio" name="gender" value="female">Female<br>
+		<input type="radio" name="gender" value="others">Others: <input type="text" name="others"><br>
+		Pets:<br>
+		<input type="checkbox" name="cat">Cat<br>
+		<input type="checkbox" name="dog">Dog<br>
+		Cars: 
+		<select name="cars">
+			<option value="Volvo">Volvo</option>
+			<option value="Toyota">Toyota</option>
+		</select><br>
+		<input type="submit"><input type="reset">
+	</form>
+</body>
+</html>
+<!-- There are some problems of the usage of name and value. 
+1. genders and others's text are seperate
+2. pets are not written out like cars 
+
+?firstname=fujikawa+
+&lastname=aimi
+&password=1234
+&email=uhh%40ggg
+&birthday=2022-08-05
+&gender=others
+&others=1234
+&cat=on
+&dog=on
+&cars=Toyota
+
+-->
